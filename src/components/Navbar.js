@@ -1,6 +1,6 @@
 import React from 'react';
 
-import logo from '../assets/images/Lunar_Logo.png';
+import logo from '../assets/images/LunarDarkLogoNR.png';
 
 const Navbar = () => {
   return (

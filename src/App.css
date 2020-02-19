@@ -1,12 +1,11 @@
 html,
 body {
   width: 100%;
-  overflow: hidden;
 }
 
 body {
   margin: 0;
-  font-family: montserrat;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /* Landing Page */
@@ -42,19 +41,72 @@ body {
 
 /* Home Page*/
 .home-wrapper {
-  background: rgb(47, 47, 47);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./assets/images/Moon_Surface_Background.jpg');
+  background-size: cover;
   height: 100vh;
 }
+
+.home-content {
+  margin: 20px;
+  justify-content: center;
+  text-align: center;
+}
+
+.home-header {
+  color: rgb(223, 222, 222);
+  text-shadow: black 5px 5px;
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 100px;
+  display: inline-block;
+  background: rgba(44, 44, 44, 0.607);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.portfolio-wrapper {
+  margin-top: 50px;
+  align-items: center;
+  display: inline-block;
+}
+
+.portfolio-item {
+  width: 500px;
+  height: 290px;
+  border-radius: 10px;
+  border: 1px solid white;
+  background-size: contain;
+  float: left;
+}
+
+.portfolio-item + .portfolio-item {
+  margin: 0 20px;
+}
+
+#handmade-audio {
+  background-image: url('./assets/images/Handmade-Audio-Image.png');
+}
+
+#rj-shoemaker {
+  background-image: url('./assets/images/RJ_Shoemaker_Image.png');
+}
+
+.portfolio-item:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
 /* End of Home Page */
 
 /* Navbar */
 .navbar-wrapper {
-  background: black;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.678), transparent);
   text-align: center;
 }
 .navbar-logo {
-  width: 200px;
-  height: auto;
+  height: 120px;
   margin-top: 10px;
 }
 /* End of Navbar */
