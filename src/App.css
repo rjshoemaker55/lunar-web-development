@@ -1,12 +1,17 @@
+html,
+body {
+  width: 100%;
+  overflow: hidden;
+}
+
 body {
   margin: 0;
   font-family: montserrat;
 }
 
 /* Landing Page */
-
 .landing-wrapper {
-  background-image: url('./Artboard 1.png');
+  background-image: url('./assets/images/Lunar_Logo.png');
   background-size: cover;
   height: 100vh;
   width: 100%;
@@ -19,12 +24,13 @@ body {
   left: 660px;
   background: rgba(73, 73, 73, 0.5);
   padding: 5px 30px;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
   font-size: 20px;
   box-shadow: rgba(255, 255, 255, 0.425) 2px 2px 2px;
   font-weight: bold;
   transition-duration: 0.3s;
+  text-decoration: none;
 }
 
 .more-info-button:hover {
@@ -32,7 +38,23 @@ body {
   cursor: pointer;
   transform: scale(1.05);
 }
+/* End of Landing Page */
 
-.home {
-  color: white;
+/* Home Page*/
+.home-wrapper {
+  background: rgb(47, 47, 47);
+  height: 100vh;
 }
+/* End of Home Page */
+
+/* Navbar */
+.navbar-wrapper {
+  background: black;
+  text-align: center;
+}
+.navbar-logo {
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+}
+/* End of Navbar */
