@@ -10,7 +10,6 @@
 
 html,
 body {
-  width: 100%;
   text-align: center;
 }
 
@@ -55,9 +54,6 @@ body {
 /* End of Landing Page */
 
 /* Home Page*/
-.home-wrapper {
-  height: 100vh;
-}
 
 .home-content {
   margin: 80px 20px 60px 20px;
@@ -213,3 +209,26 @@ body {
   margin-top: 10px;
 }
 /* End of Navbar */
+
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    overflow: auto;
+  }
+  .home-content {
+    display: block;
+  }
+
+  .portfolio-image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .portfolio-item + .portfolio-item {
+    margin: 20px 0px 0px 0px;
+  }
+
+  .boring-website + .boring-website {
+    margin: 20px 0px 0px 0px;
+  }
+}
