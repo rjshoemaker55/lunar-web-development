@@ -1,3 +1,13 @@
+/* Hide scrollbar for Chrome, Safari and Opera */
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+* {
+  -ms-overflow-style: none;
+}
+
 html,
 body {
   width: 100%;
@@ -6,6 +16,10 @@ body {
 body {
   margin: 0;
   font-family: 'Open Sans Condensed', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url('./assets/images/Moon_Surface_Background.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* Landing Page */
@@ -41,9 +55,6 @@ body {
 
 /* Home Page*/
 .home-wrapper {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('./assets/images/Moon_Surface_Background.jpg');
-  background-size: cover;
   height: 100vh;
 }
 
@@ -66,37 +77,56 @@ body {
   padding: 10px 20px;
 }
 
+/* Portfolio Section */
 .portfolio-wrapper {
   margin-top: 50px;
   align-items: center;
-  display: inline-block;
+  margin-bottom: 1000px;
+  background: transparent;
 }
 
 .portfolio-item {
-  width: 500px;
-  height: 290px;
-  border-radius: 10px;
-  border: 1px solid white;
-  background-size: contain;
-  float: left;
+  display: inline-block;
+  position: relative;
+  transition-duration: 0.5s;
 }
 
 .portfolio-item + .portfolio-item {
-  margin: 0 20px;
+  margin-left: 20px;
 }
 
-#handmade-audio {
-  background-image: url('./assets/images/Handmade-Audio-Image.png');
+.portfolio-image {
+  width: 500px;
+  height: 290px;
+  border-radius: 8px;
 }
 
-#rj-shoemaker {
-  background-image: url('./assets/images/RJ_Shoemaker_Image.png');
+.portfolio-item-box {
+  width: 200px;
+  position: absolute;
+  top: 45%;
+  left: 26%;
+  padding: 10px 15px;
+  font-size: 20px;
+  text-align: center;
+  background: rgb(206, 206, 206);
+  color: rgb(29, 29, 29);
+  border-radius: 8px;
+  opacity: 0;
+  transition-duration: 0.3s;
 }
 
-.portfolio-item:hover {
-  opacity: 0.5;
+.portfolio-item:hover .portfolio-image {
+  opacity: 0.8;
   cursor: pointer;
 }
+
+.portfolio-item:hover .portfolio-item-box {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* End of Portfolio Section */
 
 /* End of Home Page */
 
