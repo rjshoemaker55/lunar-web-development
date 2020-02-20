@@ -11,6 +11,7 @@
 html,
 body {
   width: 100%;
+  text-align: center;
 }
 
 body {
@@ -59,9 +60,11 @@ body {
 }
 
 .home-content {
-  margin: 20px;
+  margin: 80px 20px 60px 20px;
   justify-content: center;
+  align-items: center;
   text-align: center;
+  display: inline-block;
 }
 
 .home-header {
@@ -70,7 +73,6 @@ body {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 2px;
-  margin-top: 100px;
   display: inline-block;
   background: rgba(44, 44, 44, 0.607);
   border-radius: 10px;
@@ -81,7 +83,7 @@ body {
 .portfolio-wrapper {
   margin-top: 50px;
   align-items: center;
-  margin-bottom: 1000px;
+  margin-bottom: 100px;
   background: transparent;
 }
 
@@ -99,6 +101,7 @@ body {
   width: 500px;
   height: 290px;
   border-radius: 8px;
+  opacity: 0.9;
 }
 
 .portfolio-item-box {
@@ -127,6 +130,76 @@ body {
 }
 
 /* End of Portfolio Section */
+
+/* Boring Website Section */
+.boring-website {
+  width: 350px;
+  height: 200px;
+  border-radius: 8px;
+  opacity: 0.9;
+  display: inline-block;
+  background-size: cover;
+}
+
+.boring-website + .boring-website {
+  margin-left: 20px;
+}
+
+#boring-website-1 {
+  background-image: url('./assets/images/Boring_Site1.png');
+}
+
+#boring-website-2 {
+  background-image: url('./assets/images/Boring_Site2.png');
+}
+
+#boring-website-3 {
+  background-image: url('./assets/images/Boring_Site3.png');
+}
+
+.blah-text {
+  margin-top: 50px;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  font-size: 50px;
+  text-shadow: white 3px 3px;
+}
+/* End of Boring Website Section
+
+/* Contact Section */
+.home-subheader {
+  color: rgb(37, 37, 37);
+  text-shadow: rgb(145, 144, 144) 5px 3px;
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background: rgba(231, 231, 231, 0.607);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.contact-section {
+  background: rgba(56, 56, 56, 0.9);
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 50px;
+  color: white;
+  padding: 40px;
+}
+
+#contact-header {
+  font-size: 30px;
+  font-weight: 200;
+  text-shadow: black 3px 3px;
+}
+
+.contact-row {
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+/* End of Contact Section */
 
 /* End of Home Page */
 

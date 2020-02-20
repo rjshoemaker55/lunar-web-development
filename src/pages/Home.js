@@ -2,6 +2,7 @@ import React from 'react';
 
 import Navbar from '../components/Navbar';
 import PortfolioItem from '../components/PortfolioItem';
+import BoringWebsite from '../components/BoringWebsite';
 import HandmadeAudioImage from '../assets/images/Handmade-Audio-Image.png';
 import RJShoemakerImage from '../assets/images/RJ_Shoemaker_Image.png';
 
@@ -30,6 +31,23 @@ const Home = () => {
               imageId='rj-shoemaker-image'
               boxLabel="RJ Shoemaker's Website"
             />
+          </div>
+          <div className='home-header'>No cookie-cutter designs.</div>
+          <div className='portfolio-wrapper'>
+            <BoringWebsite id='boring-website-1' />
+            <BoringWebsite id='boring-website-2' />
+            <BoringWebsite id='boring-website-3' />
+          </div>
+          <div className='home-subheader'>
+            Let us build your personal or small business website.
+          </div>
+          <div className='contact-section'>
+            <div id='contact-header' className='contact-row'>
+              Reach Out:
+            </div>
+            <div className='contact-row'>Lunar Web Development</div>
+            <div className='contact-row'>rj.shoemaker@lunardm.com</div>
+            <div className='contact-row'>908-824-0852</div>
           </div>
         </div>
       </div>
