@@ -4,3 +4,5 @@
 
 ###  ⚛️ Built with React
 #### Visit the deployed site [Here](http://www.lunardm.com)
+
+Site may be a bit slow to load as it is currently hosted on a free plan.
