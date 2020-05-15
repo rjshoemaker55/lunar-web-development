@@ -97,7 +97,7 @@ body {
   width: 500px;
   height: 290px;
   border-radius: 8px;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .portfolio-item-box {
@@ -116,7 +116,7 @@ body {
 }
 
 .portfolio-item:hover .portfolio-image {
-  opacity: 0.8;
+  opacity: 0.65;
   cursor: pointer;
 }
 
@@ -132,7 +132,7 @@ body {
   width: 350px;
   height: 200px;
   border-radius: 8px;
-  opacity: 0.9;
+  opacity: 0.75;
   display: inline-block;
   background-size: cover;
 }

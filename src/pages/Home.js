@@ -5,6 +5,7 @@ import PortfolioItem from '../components/PortfolioItem';
 import BoringWebsite from '../components/BoringWebsite';
 import HandmadeAudioImage from '../assets/images/Handmade-Audio-Image.png';
 import RJShoemakerImage from '../assets/images/RJ_Shoemaker_Image.png';
+import StarAudioImage from '../assets/images/Star_Audio_Screenshot.png';
 
 const Home = () => {
   return (
@@ -23,10 +24,16 @@ const Home = () => {
           <PortfolioItem
             id='rj-shoemaker'
             url='http://www.rjshoemaker.com'
-            target='_blank'
             imageUrl={RJShoemakerImage}
             imageId='rj-shoemaker-image'
-            boxLabel="RJ Shoemaker's Website"
+            boxLabel="RJ Shoemaker's Portfolio"
+          />
+          <PortfolioItem
+            id='star-audio'
+            url='https://lit-chamber-40261.herokuapp.com'
+            imageUrl={StarAudioImage}
+            imageId='start-audio-image'
+            boxLabel='Star Audio'
           />
         </div>
         <div className='home-header'>No cookie-cutter designs.</div>
